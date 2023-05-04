@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.UpdatePackagesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Update Package"
+        app:titleTextColor="@color/black" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/addedImage"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ImageMark"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/picture" />
+
+            <Button
+                android:id="@+id/AddImageBTN"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/addedImage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Update Picture"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/packageNameET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/AddImageBTN"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Package Name"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/personET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/packageNameET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Person"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/priceET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/personET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Price"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/foodET"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top|left"
+                android:padding="10dp"
+                android:minLines="10"
+                android:layout_below="@id/priceET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Food Description"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/arraingmentET"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top|left"
+                android:padding="10dp"
+                android:minLines="10"
+                android:layout_below="@id/foodET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Arrangement Description"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/residenceET"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top|left"
+                android:padding="10dp"
+                android:minLines="10"
+                android:layout_below="@id/arraingmentET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Residence Description"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/guidesET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/residenceET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Number of Guides"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/validityET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/guidesET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Package Limitations"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/contactNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/validityET"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:hint="Contact Number"
+                android:paddingStart="10dp" />
+
+            <Button
+                android:id="@+id/confirmBTN"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/contactNumberET"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Update Package"
+                android:textColor="@color/white" />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

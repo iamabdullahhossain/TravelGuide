@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelGuide"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activites.AllActivatedPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.LoginCustomerAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.AllConfirmedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.ConfirmedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.BookingConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.BookingRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.CustomerInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.UpdatePackagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.AllCreatedPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.DetailsPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.CreatePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.HomeScreenAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.TouristActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SplashScreenActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false" />
+    </application>
+
+</manifest>
